@@ -8,6 +8,12 @@ pylint = "*"
 
 [packages]
 pygame = "*"
+isort = {extras = ["pipfile"],version = "*"}
+flake8 = "*"
+autopep8 = "*"
+docformatter = "*"
+blake = "*"
+black = "*"
 
 [requires]
 python_version = "3.8"

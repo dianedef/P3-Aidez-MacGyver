@@ -1,12 +1,18 @@
-from . import images
-from constants import SPRITE_SIZE
 import pygame
 
-class KeeperSprite(pygame.sprite.Sprite): 
-    """Déplace un player à travers l'écran. Elle peut faire tournoyer
-    le player quand il a attrapé un objet."""
+from constants import SPRITE_SIZE
+
+from . import images
+
+
+class KeeperSprite(pygame.sprite.Sprite):
+    """This class represents the keeper's sprite on the screen."""
+
     def __init__(self, keeper, filename):
-        super().__init__()        #Appel du constructeur de Sprite
+        """This function initializes a sprite from the superclass and from its
+        file in the resources folder."""
+
+        super().__init__()
         self.image, self.rect = images.load_image(filename, -1)
         self.keeper = keeper
         self.rect.x = self.keeper.position.x * SPRITE_SIZE

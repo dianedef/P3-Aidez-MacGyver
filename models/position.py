@@ -1,13 +1,14 @@
-class Position: 
-    """ This class represent a position on the maze with an y and y. """
+class Position:
+    """This class represent a position on the maze with an y and y."""
 
     def __init__(self, x, y):
-        """ This function initialize a position with an x and y. """
+        """This function initialize a position with an x and y."""
         self.x = x
         self.y = y
 
     def update(self, direction):
-        """ Cette fonction permet de faire évoluer la position d'une case vers une direction."""
+        """This function allows to move the position from one step in a
+        direction."""
 
         if direction == "r":
             self.x += 1
@@ -19,18 +20,19 @@ class Position:
             self.y += 1
 
     def get_position(self):
-        """ Cette fonction renvoit la position sous forme de tuple. """
+        """This function returns the position thourgh a tuple."""
 
         return Position(self.x, self.y)
 
     def __eq__(self, other):
-        """ Cette fonction permet de comparer si deux positions sont identiques. """
+        """This function allows to compare two positions on the basis of their
+        x and y."""
         if self.x == other.x and self.y == other.y:
             return True
 
     def __repr__(self):
-        """ Cette fonction renvoie la position sous forme x y"""
-        
+        """This function return the position as x y."""
+
         return f"Position ({self.x}, {self.y})"
 
     @property
