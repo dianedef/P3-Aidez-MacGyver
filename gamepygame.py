@@ -51,7 +51,7 @@ class Game:
     def start(self):
         self.running = True
         # We create our window and fill it with maroon
-        screen = pygame.display.set_mode((self.labyrinth.width*SPRITE_SIZE, self.labyrinth.length*SPRITE_SIZE))
+        screen = pygame.display.set_mode((self.labyrinth.width*SPRITE_SIZE, (self.labyrinth.length+1)*SPRITE_SIZE))
         screen.fill(COLOR_MAROON)
         pygame.display.set_caption('Labyrinthe MacGyver')
         clock = pygame.time.Clock()

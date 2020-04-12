@@ -1,9 +1,8 @@
 class Position: 
-    """ Cette classe définit une position."""
+    """ This class represent a position on the maze with an y and y. """
 
     def __init__(self, x, y):
-        """ Cette classe donne un x et un y à la position. """
-
+        """ This function initialize a position with an x and y. """
         self.x = x
         self.y = y
 

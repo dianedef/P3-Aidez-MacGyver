@@ -6,8 +6,7 @@ import random
 class Labyrinth:
 
     def __init__(self):
-        """ Cette fonction initialise un labyrinthe avec des chemins, une position de départ, d'arrivée, et des murs. """
-
+        """ This function initialize a labyrinth with paths, departure, end, and walls """
         self.paths = []
         self.start = None
         self.end = None
@@ -16,8 +15,7 @@ class Labyrinth:
         self.item_positions = []
 
     def define_path(self, filename):
-        """ Cette fonction map les chemins et les positions du labyrinthe en fonction d'un fichier texte. """
-        
+        """ This function creates the labyrinth's path from the text file map.txt """
         with open(filename) as file:
             content = file.readlines()
             for num_line, line in enumerate(content):
@@ -39,6 +37,6 @@ class Labyrinth:
         self.paths.append(self.start)
     
     def random_pos(self, number):
-        """ This gives a position in paths that is neither the beginning nor the end. """
+        """ This function returns path position that is neither the beginning nor the end """
         positions = random.sample(self.paths[:-2], 3)
         return positions[number]

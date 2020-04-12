@@ -12,9 +12,5 @@ class ItemSprite(pygame.sprite.Sprite):
 
     def update(self):
         "hh"
-        if self.item.status == "not_catched":
-            self.rect.x = self.item.position.x * SPRITE_SIZE
-            self.rect.y = self.item.position.y * SPRITE_SIZE
-        else:
-            pass
-            # en bas a gauche
+        self.rect.x = self.item.position.x * SPRITE_SIZE
+        self.rect.y = self.item.position.y * SPRITE_SIZE

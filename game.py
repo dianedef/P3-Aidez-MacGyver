@@ -9,7 +9,7 @@ from copy import copy
 
 class Game:
     def __init__(self):
-        """ Cette fonction initie le jeu avec un labyrinthe, un joueur, un garde et 3 items éparpillés. """
+        """ This function initialize the game with a labyrinth, a player, a keeper, and 3 items at random positions on the labyrinth"""
         self.running = False
         self.labyrinth = Labyrinth()
         self.labyrinth.define_path("map.txt")
@@ -23,6 +23,7 @@ class Game:
         ] 
 
     def exit(self):
+        """ This function checks if the bag of the player is full"""
         if self.player.bag == 3:
             print("Bravo, vous avez pu endormir le garde et sortir du labyrinthe, vous avez gagné !")
         else:
