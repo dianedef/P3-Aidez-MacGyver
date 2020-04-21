@@ -1,3 +1,5 @@
+"""This module defines classes and functions related to the item in the game."""
+
 class Item:
     def __init__(self, name, position):
         """This function initialize an Item with a name, a position and a

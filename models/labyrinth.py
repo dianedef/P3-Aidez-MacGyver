@@ -1,3 +1,5 @@
+"""This module defines classes and functions related to the labyrinth in the game."""
+
 import random
 
 from models.item import Item

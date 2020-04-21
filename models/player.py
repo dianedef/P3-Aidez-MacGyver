@@ -1,4 +1,5 @@
-"""This module defines all classes and functions about the player."""
+"""This module defines classes and functions related to the hero in the game."""
+
 from copy import copy
 
 import pygame

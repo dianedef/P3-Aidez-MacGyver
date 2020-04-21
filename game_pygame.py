@@ -1,3 +1,5 @@
+"""This module contains the graphical version of the game."""
+
 import os
 import random
 import time

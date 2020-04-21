@@ -1,3 +1,5 @@
+"""This module defines classes and functions related to the positions used by items and he hero in the game."""
+
 class Position:
     """This class represent a position on the maze with an y and y."""
 

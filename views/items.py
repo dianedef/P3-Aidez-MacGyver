@@ -1,3 +1,5 @@
+"""This module defines classes and functions related to the items'sprites in the game."""
+
 import pygame
 
 from constants import SPRITE_SIZE

@@ -1,3 +1,5 @@
+"""This module defines the function that loads the sprite images in te graphical game."""
+
 import os
 import sys
 

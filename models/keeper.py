@@ -1,3 +1,5 @@
+"""This module defines classes and functions related to the keeper in the game."""
+
 from models.labyrinth import Labyrinth
 
 
