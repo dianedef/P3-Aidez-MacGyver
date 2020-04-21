@@ -1,23 +1,17 @@
 # P3 - Help MacGyver
-  Here is the game corresponding to my project 3 on OpenClassrooms
+  This is the game corresponding to my project 3 on OpenClassrooms - Python program
 
 * Install the game *
 
-We assume here that you have Python 3 and pipenv installed. The commands below must be launched in a terminal
+We assume here that you have Python 3 installed. The commands below must be launched in a terminal :
 
-1. The file must be launched in a virtual environment with Python 3: type "pipenv install" in your terminal to install the dependencies of the program (pygame in particular).
-2. Activate the environment with "pipenv shell" in your terminal
-3. Start the game with: python gamepygame.py
+- The file must be launched in a virtual environment with Python 3: type "pipenv install" in your terminal to install the dependencies of the program (pygame in particular).
+- Activate the virtual environment with "pipenv shell" in your terminal
+- Start the game : type "python game_pygame.py" and press Enter. The game starts.
 
-* Start the game *
-
-In a new line on your terminal, type "python gamepygame.py" and press Enter, the game starts.
-
-*To play*
-
-The rules are as follows:
+*The rules*
 
 - You can move with the arrows on the keyboard
-- You must collect all the items before you head for the exit
-- You win if you go out and collect all the items
-- Otherwise, you lose
+- You must collect all the items before you head for the exit, by walking though them
+- You win if you go to the exit (where the keeper is!) after having collected all the items
+- If you missed one or more items and go to the exit, you lose !
