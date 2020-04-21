@@ -2,7 +2,6 @@
 
 import random
 
-from models.item import Item
 from models.position import Position
 
 

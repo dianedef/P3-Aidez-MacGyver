@@ -1,7 +1,6 @@
 """This module defines the function that loads the sprite images in te graphical game."""
 
 import os
-import sys
 
 import pygame
 
@@ -16,7 +15,7 @@ def load_image(name, colorkey=None):
     fullname = os.path.join('resources', name)
     try:
         image = pygame.transform.scale(pygame.image.load(fullname), (50, 50))
-    except pygame.error as message:
+    except pygame.error:
         print("Cannot load image :", name)
         raise SystemExit
     image = image.convert_alpha()

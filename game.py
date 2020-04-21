@@ -1,6 +1,5 @@
 """This module contains the terminal version of the game."""
 
-import random
 from copy import copy
 
 from models.item import Item

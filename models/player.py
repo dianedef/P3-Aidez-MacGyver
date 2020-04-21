@@ -2,10 +2,6 @@
 
 from copy import copy
 
-import pygame
-
-from models.item import Item
-from models.labyrinth import Labyrinth
 from models.position import Position
 
 
@@ -31,13 +27,14 @@ class Player:
         else:
             self.position = prev_position
         self.catch_item()
+        print(self.position)
 
     def catch_item(self):
         """This function verifies if there is an object on the position of the
         player, changes its status and position if so, and deletes it from the
         objects list."""
-        print("Well done, you got " + str(self.bag) + " object(s).")
         if self.position.xy in self.jeu.labyrinth.item_positions:
+            print("Well done, you got " + str(self.bag) + " object(s).")
             self.bag += 1
             self.jeu.labyrinth.item_positions[self.position.xy].status = "catched"
             self.jeu.labyrinth.item_positions[self.position.xy].position = Position(
@@ -47,8 +44,6 @@ class Player:
     def exit(self):
         """This function verifies if the player is at the end of the labyrinth
         and if its bag is full, so that the game is lost or won."""
-        print(self.jeu.labyrinth.end)
-        print(self.position)
         if self.position == self.jeu.labyrinth.end:
             if self.bag == 3:
                 print(

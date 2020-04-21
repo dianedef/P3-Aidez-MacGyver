@@ -1,7 +1,5 @@
 """This module defines classes and functions related to the keeper in the game."""
 
-from models.labyrinth import Labyrinth
-
 
 class Keeper:
     """This class represents the keeper's sprite on the screen."""

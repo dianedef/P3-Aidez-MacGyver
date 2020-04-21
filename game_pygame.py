@@ -1,20 +1,15 @@
 """This module contains the graphical version of the game."""
 
-import os
-import random
-import time
 from copy import copy
 
 import pygame
-from pygame import K_DOWN, K_ESCAPE, K_LEFT, K_RIGHT, K_UP, KEYDOWN, QUIT
+from pygame import KEYDOWN, QUIT
 
-from constants import COLOR_GREEN, COLOR_MAROON, SPRITE_SIZE
+from constants import COLOR_GREEN, SPRITE_SIZE
 from models.item import Item
 from models.keeper import Keeper
 from models.labyrinth import Labyrinth
 from models.player import Player
-from models.position import Position
-from views.images import load_image
 from views.items import ItemSprite
 from views.keeper import KeeperSprite
 from views.player import PlayerSprite
